@@ -26,14 +26,31 @@ function draw() {
     print(currmin)
   }
   background(0)
+
+  // let moon = map(currmin, 0, 59, 333, 467)
+  // fill(10, 10, 50)
+  // circle(400, 480, 50)
+  // fill('#f5f3ce')
+  // beginShape()
+  // vertex(400, 430)
+  // bezierVertex(333, 435, 333, 525, 400, 530)
+  // bezierVertex(moon, 525, moon, 435, 400, 430)
+  // endShape()
+
   let moon = map(currmin, 0, 59, 333, 467)
-  fill(10, 10, 50)
+  fill('#FEFCD7')
   circle(400, 480, 50)
-  fill('#f5f3ce')
+  fill('#e8e5b0')
+  circle(380, 473, 24)
+  circle(416, 505, 15)
+  circle(425, 464, 9)
+  fill('#FEFCD7')
+  circle(380, 473, 20)
+  fill(10, 10, 50)
   beginShape()
   vertex(400, 430)
-  bezierVertex(333, 435, 333, 525, 400, 530)
-  bezierVertex(moon, 525, moon, 435, 400, 430)
+  bezierVertex(467, 425, 467, 535, 400, 530)
+  bezierVertex(moon, 535, moon, 425, 400, 430)
   endShape()
 
   let hr = hour()
@@ -54,6 +71,6 @@ function draw() {
 
   fill(255)
   for (let i = 0; i < second(); i++) {
-    circle(stars[i][0], stars[i][1], 2)
+    circle(stars[i][0], stars[i][1], 1.5)
   }
 }
