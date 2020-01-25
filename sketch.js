@@ -54,6 +54,6 @@ function draw() {
 
   fill(255)
   for (let i = 0; i < second(); i++) {
-    circle(stars[i][0], stars[i][1], 4)
+    circle(stars[i][0], stars[i][1], 2)
   }
 }
